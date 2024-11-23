@@ -1,6 +1,6 @@
 app-id: io.github.picocrypt.Picocrypt
 runtime: org.freedesktop.Platform
-runtime-version: "23.08"
+runtime-version: "24.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.golang
@@ -30,7 +30,7 @@ modules:
         url: "https://github.com/Picocrypt/Picocrypt/archive/refs/tags/1.42.tar.gz"
         sha256: b3c577d39a4f1a87131a2013894fb0b510cf147677b91d0f58313f0c85717474
       - type: file
-        url: https://raw.githubusercontent.com/Picocrypt/Picocrypt/e8016064e8136429e80e98fd402e82a0ada6821f/dist/flatpak/io.github.picocrypt.Picocrypt.metainfo.xml
+        url: https://raw.githubusercontent.com/Picocrypt/Picocrypt/509dd5775e78ced6cf5b3ac56d4dcf76f295e7c3/dist/flatpak/io.github.picocrypt.Picocrypt.metainfo.xml
         sha256: a3a555bf36dc17be6549539c9837d963267bd58ba4805a0eb04cedaba11864c4
       - type: file
         url: https://raw.githubusercontent.com/Picocrypt/Picocrypt/e8016064e8136429e80e98fd402e82a0ada6821f/dist/flatpak/io.github.picocrypt.Picocrypt.desktop
