@@ -23,18 +23,12 @@ modules:
       - cp -r src/* . && $GOROOT/bin/go build -mod=vendor -ldflags="-s -w" -o picocrypt-gui
       - install -Dm00755 picocrypt-gui $FLATPAK_DEST/bin/picocrypt-gui
       - install -Dm00644 images/key.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/$FLATPAK_ID.svg
-      - install -Dm00644 $FLATPAK_ID.desktop $FLATPAK_DEST/share/applications/$FLATPAK_ID.desktop
-      - install -Dm00644 $FLATPAK_ID.metainfo.xml $FLATPAK_DEST/share/appdata/$FLATPAK_ID.metainfo.xml
+      - install -Dm00644 dist/flatpak/$FLATPAK_ID.desktop $FLATPAK_DEST/share/applications/$FLATPAK_ID.desktop
+      - install -Dm00644 dist/flatpak/$FLATPAK_ID.metainfo.xml $FLATPAK_DEST/share/appdata/$FLATPAK_ID.metainfo.xml
     sources:
       - type: archive
         url: "https://github.com/Picocrypt/Picocrypt/archive/refs/tags/1.46.tar.gz"
         sha256: fbd6a741f3646f1b2d68f567c51d72cdcf5d7da01d19763420437d0994d91b89
-      - type: file
-        url: https://raw.githubusercontent.com/Picocrypt/Picocrypt/670d2846033d758525c9389ddb01c4dcca7171b9/dist/flatpak/io.github.picocrypt.Picocrypt.metainfo.xml
-        sha256: 4e6b905f3e1b6f0bd04c4da80042d78ad0055c7bf868ac151e3cf2973da60419
-      - type: file
-        url: https://raw.githubusercontent.com/Picocrypt/Picocrypt/e8016064e8136429e80e98fd402e82a0ada6821f/dist/flatpak/io.github.picocrypt.Picocrypt.desktop
-        sha256: 83ca4fe18d3fc5c056487a7552abcd311e618ddbae3d5d330ed60171d897cafc
       - dest: vendor
         path: modules.txt
         type: file
@@ -69,10 +63,10 @@ modules:
         type: archive
         url: https://proxy.golang.org/github.com/!picocrypt/zxcvbn-go/@v/v0.0.0-20240831000415-fccb38ccb913.zip
       - dest: vendor/golang.org/x/crypto
-        sha256: ec96acfe28be3ff2fb14201c5f51132f0e24c7d0d6f3201a8aa69c84f989d014
+        sha256: 959d6b2fb5ee7d50113a0cb26dbdd8fa06710d4e97fae709be2d2755e827ede7
         strip-components: 3
         type: archive
-        url: https://proxy.golang.org/golang.org/x/crypto/@v/v0.26.0.zip
+        url: https://proxy.golang.org/golang.org/x/crypto/@v/v0.32.0.zip
       - dest: vendor/github.com/Picocrypt/gl
         sha256: 8c62b56799182a8a20009559c47bfb0ae3e0ab8e8d28a3a7f0e9b57816c7bb61
         strip-components: 3
@@ -94,7 +88,7 @@ modules:
         type: archive
         url: https://proxy.golang.org/github.com/!picocrypt/w32/@v/v0.0.0-20240831001500-1183079d4d57.zip
       - dest: vendor/golang.org/x/sys
-        sha256: fbc83ddb0aee236ee85c0f8294e7c9b6f79d28794d22e7d0957fcd64ca252960
+        sha256: 1d759c017d09328a4dacdd4a1a0170cf21641995c6e3ca1f96213369d73c6846
         strip-components: 3
         type: archive
-        url: https://proxy.golang.org/golang.org/x/sys/@v/v0.24.0.zip
+        url: https://proxy.golang.org/golang.org/x/sys/@v/v0.29.0.zip
