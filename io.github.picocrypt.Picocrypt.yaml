@@ -27,8 +27,8 @@ modules:
       - install -Dm00644 dist/flatpak/$FLATPAK_ID.metainfo.xml $FLATPAK_DEST/share/appdata/$FLATPAK_ID.metainfo.xml
     sources:
       - type: archive
-        url: "https://github.com/Picocrypt/Picocrypt/archive/refs/tags/1.48.tar.gz"
-        sha256: a11ba4bdec7898f948fbd634809205bff61d78ed8b9eecb0fac2d7fda39b623d
+        url: "https://github.com/Picocrypt/Picocrypt/archive/refs/tags/1.49.tar.gz"
+        sha256: b50bb981a9c6969337a647bd6e46dda54458c8ec57017d609f7482825605571a
       - dest: vendor
         path: modules.txt
         type: file
@@ -38,10 +38,10 @@ modules:
         type: archive
         url: "https://proxy.golang.org/github.com/!picocrypt/dialog/@v/v0.0.0-20250412233924-78f7b909315b.zip"
       - dest: vendor/github.com/Picocrypt/giu
-        sha256: b3ced61c22332846fafb4d2a80da795fc4dc5eddc3dbc81d5ec714aefe4924fc
+        sha256: fd6d61c574c5b716d6e4072c65849cc7f8f0e2dd9e945d0ed20819b3227339ab
         strip-components: 3
         type: archive
-        url: "https://proxy.golang.org/github.com/!picocrypt/giu/@v/v0.0.0-20250412235908-fe90a482e6f2.zip"
+        url: "https://proxy.golang.org/github.com/!picocrypt/giu/@v/v0.0.0-20250801020750-ec85cd24c933.zip"
       - dest: vendor/github.com/Picocrypt/imgui-go
         sha256: 2345ccd55489588c90a88d1265331a8f1fc0c1d7d77df3b3b0430fce159888e0
         strip-components: 3
@@ -63,10 +63,10 @@ modules:
         type: archive
         url: "https://proxy.golang.org/github.com/!picocrypt/zxcvbn-go/@v/v0.0.0-20250412183938-d59695960527.zip"
       - dest: vendor/golang.org/x/crypto
-        sha256: 7ce6b2be21be1ce9e04dc784830e08931f09b5903596b8017839322c9e828667
+        sha256: 6a55423d327359615db923c5f17e5f10c4c7d91c39ef8d0b7f6e0876f89ff9da
         strip-components: 3
         type: archive
-        url: "https://proxy.golang.org/golang.org/x/crypto/@v/v0.37.0.zip"
+        url: "https://proxy.golang.org/golang.org/x/crypto/@v/v0.40.0.zip"
       - dest: vendor/github.com/Picocrypt/gl
         sha256: 0b486b9c2632dc96c505b5f1935d9bbc24971c73738938b634df965e826b863f
         strip-components: 3
@@ -88,7 +88,7 @@ modules:
         type: archive
         url: "https://proxy.golang.org/github.com/!picocrypt/w32/@v/v0.0.0-20240831001500-1183079d4d57.zip"
       - dest: vendor/golang.org/x/sys
-        sha256: 85d47075d21fd7ef35d9a47fc73f2356fb3cd2e7fab7f45c874b814bf312127d
+        sha256: 27d5489227865ffffc3fbbbaf6100952ca2925eba19cfdff01e6e76b986b4bb4
         strip-components: 3
         type: archive
-        url: "https://proxy.golang.org/golang.org/x/sys/@v/v0.32.0.zip"
+        url: "https://proxy.golang.org/golang.org/x/sys/@v/v0.34.0.zip"
