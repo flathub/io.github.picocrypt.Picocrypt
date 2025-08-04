@@ -28,7 +28,7 @@ modules:
     sources:
       - type: archive
         url: "https://github.com/Picocrypt/Picocrypt/archive/refs/tags/1.49.tar.gz"
-        sha256: a11ba4bdec7898f948fbd634809205bff61d78ed8b9eecb0fac2d7fda39b623d
+        sha256: b50bb981a9c6969337a647bd6e46dda54458c8ec57017d609f7482825605571a
       - dest: vendor
         path: modules.txt
         type: file
